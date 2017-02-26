@@ -136,9 +136,9 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;DEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -162,9 +162,9 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;DEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -187,9 +187,9 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;NDEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -218,9 +218,9 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;NDEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -247,9 +247,9 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <DisableSpecificWarnings>4127;4324;4458;4800;28125;28252;28253;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;28125;28252;28253;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;NDEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -274,9 +274,9 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <DisableSpecificWarnings>4127;4324;4458;4800;28125;28252;28253;4018;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4127;4324;4458;4800;28125;28252;28253;4018;4146;4244;4267;4312;4702;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;WINVER=0x0501;_WIN32_WINNT=0x0501;_HAS_EXCEPTIONS=0;NDEBUG;FT2_BUILD_LIBRARY;FT_OPTION_AUTOFIT2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\ext\freetype2\config;..\ext\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ext2\freetype2-sumatra;..\ext2\freetype2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -298,36 +298,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\ext\freetype2\src\base\ftbase.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftbbox.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftbitmap.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftdebug.c">
+    <ClCompile Include="..\ext2\freetype2\src\base\ftbase.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftbbox.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftbitmap.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftdebug.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleasePrefast|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleasePrefast|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\ext\freetype2\src\base\ftgasp.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftglyph.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftinit.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftotval.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftstroke.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftsynth.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftsystem.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\fttype1.c" />
-    <ClCompile Include="..\ext\freetype2\src\base\ftxf86.c" />
-    <ClCompile Include="..\ext\freetype2\src\cff\cff.c" />
-    <ClCompile Include="..\ext\freetype2\src\cid\type1cid.c" />
-    <ClCompile Include="..\ext\freetype2\src\gzip\ftgzip.c" />
-    <ClCompile Include="..\ext\freetype2\src\otvalid\otvalid.c" />
-    <ClCompile Include="..\ext\freetype2\src\psaux\psaux.c" />
-    <ClCompile Include="..\ext\freetype2\src\pshinter\pshinter.c" />
-    <ClCompile Include="..\ext\freetype2\src\psnames\psnames.c" />
-    <ClCompile Include="..\ext\freetype2\src\raster\raster.c" />
-    <ClCompile Include="..\ext\freetype2\src\sfnt\sfnt.c" />
-    <ClCompile Include="..\ext\freetype2\src\smooth\smooth.c" />
-    <ClCompile Include="..\ext\freetype2\src\truetype\truetype.c" />
-    <ClCompile Include="..\ext\freetype2\src\type1\type1.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftfntfmt.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftgasp.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftglyph.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftinit.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftotval.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftstroke.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftsynth.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\ftsystem.c" />
+    <ClCompile Include="..\ext2\freetype2\src\base\fttype1.c" />
+    <ClCompile Include="..\ext2\freetype2\src\cff\cff.c" />
+    <ClCompile Include="..\ext2\freetype2\src\cid\type1cid.c" />
+    <ClCompile Include="..\ext2\freetype2\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\ext2\freetype2\src\otvalid\otvalid.c" />
+    <ClCompile Include="..\ext2\freetype2\src\psaux\psaux.c" />
+    <ClCompile Include="..\ext2\freetype2\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\ext2\freetype2\src\psnames\psnames.c" />
+    <ClCompile Include="..\ext2\freetype2\src\raster\raster.c" />
+    <ClCompile Include="..\ext2\freetype2\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\ext2\freetype2\src\smooth\smooth.c" />
+    <ClCompile Include="..\ext2\freetype2\src\truetype\truetype.c" />
+    <ClCompile Include="..\ext2\freetype2\src\type1\type1.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

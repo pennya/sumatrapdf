@@ -355,10 +355,11 @@ function libjpeg_turbo_files()
 end
 
 function freetype_files()
-  files_in_dir("ext/freetype2/src/base", {
+  files_in_dir("ext2/freetype2/src/base", {
     "ftbase.c",
     "ftbbox.c",
     "ftbitmap.c",
+    "ftfntfmt.c",
     "ftgasp.c",
     "ftglyph.c",
     "ftinit.c",
@@ -366,11 +367,10 @@ function freetype_files()
     "ftsynth.c",
     "ftsystem.c",
     "fttype1.c",
-    "ftxf86.c",
     "ftotval.c",
   })
 
-  files_in_dir("ext/freetype2/src", {
+  files_in_dir("ext2/freetype2/src", {
     "cff/cff.c",
     "cid/type1cid.c",
     "psaux/psaux.c",
@@ -386,7 +386,7 @@ function freetype_files()
   })
 
   filter "configurations:Debug*"
-    files { "ext/freetype2/src/base/ftdebug.c" }
+    files { "ext2/freetype2/src/base/ftdebug.c" }
   filter {}
 
 end

@@ -219,9 +219,10 @@ workspace "SumatraPDF"
     kind "StaticLib"
     language "C"
     defines { "FT2_BUILD_LIBRARY", "FT_OPTION_AUTOFIT2"}
-    disablewarnings { "4018", "4996" }
-    includedirs { "ext/freetype2/config" }
-    includedirs { "ext/freetype2/include" }
+    disablewarnings { "4018", "4146", "4244", "4267", "4312", "4702", "4996" }
+    -- ensure we pick our custom ft2build.h
+    includedirs { "ext2/freetype2-sumatra" }
+    includedirs { "ext2/freetype2/include" }
     freetype_files()
 
 
