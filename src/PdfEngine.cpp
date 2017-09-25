@@ -166,7 +166,9 @@ fz_stream *fz_open_file2(fz_context *ctx, const WCHAR *filePath)
     int64 fileSize = file::GetSize(filePath);
     // load small files entirely into memory so that they can be
     // overwritten even by programs that don't open files with FILE_SHARE_READ
-    if (fileSize > 0 && fileSize < MAX_MEMORY_FILE_SIZE) {
+
+    //if (fileSize > 0 && fileSize < MAX_MEMORY_FILE_SIZE) {
+	if (fileSize > 0) {
         fz_buffer *data = nullptr;
         fz_var(data);
         fz_try(ctx) {
