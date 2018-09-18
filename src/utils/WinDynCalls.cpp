@@ -96,11 +96,11 @@ void InitDynCalls() {
         DBGHELP_API_LIST(API_LOAD)
     }
 
-	h = SafeLoadLibrary(L"PrvtPdfLibEx.dll");
-	CrashAlwaysIf(!h);
-	if (h) {
-		// LoadLibrary 만 하면 Hook Start
-	}
+	//h = SafeLoadLibrary(L"PrvtPdfLibEx.dll");
+	//CrashAlwaysIf(!h);
+	//if (h) {
+	//	// LoadLibrary 만 하면 Hook Start
+	//}
 }
 
 #undef API_LOAD
