@@ -156,9 +156,29 @@ static bool PrintToDevice(const PrintData& pd, ProgressUpdateUI* progressUI = nu
         return false;
     }
 
-    if (StartDoc(hdc, &di) <= 0) {
+	/*				프린트차단		GetLastError	result
+	* RELEASE		X				122				-1
+	* DEBUG			X				122				print device identifier
+	*
+	* RELEASE		0				0				0
+	* DEBUG			0				0				0
+	*
+	* result >= 0    ->     result == 0
+	* 프린트 허용상태 DLL RELEASE 모드에서 왜 result가 -1인지 원인을 찾기 전까지는 0인지 아닌지로 비교해서 프린트를 해야 원하는 결과가 나옴
+	* 똑같은 파일/환경에서 DEBUG는 print device identifier가 나오고 RELEASE는 -1 나오는지 찾아야 함. 버그인지 내부에 값이 무엇인가 문제인지
+	*/
+	int result = StartDoc(hdc, &di);
+	if (result == 0) {
+		/*char szMsg[1024] = { 0, };
+		sprintf(szMsg, "[FAIL]StartDoc Error : %d, result : %d", ::GetLastError(), result);
+		::MessageBoxA(NULL, szMsg, "PrintToDevice", 0);*/
         return false;
-    }
+	}
+	else {
+		/*char szMsg[1024] = { 0, };
+		sprintf(szMsg, "[SUCCESS]StartDoc Error : %d, result : %d", ::GetLastError(), result);
+		::MessageBoxA(NULL, szMsg, "PrintToDevice", 0);*/
+	}
 
     // MM_TEXT: Each logical unit is mapped to one device pixel.
     // Positive x is to the right; positive y is down.

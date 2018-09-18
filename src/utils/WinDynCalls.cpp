@@ -1,6 +1,7 @@
 /* Copyright 2015 the SumatraPDF project authors (see AUTHORS file).
 License: Simplified BSD (see COPYING.BSD) */
 
+#include <tchar.h>
 #include "BaseUtil.h"
 #include "WinDynCalls.h"
 #include "WinUtil.h"
@@ -26,6 +27,18 @@ DBGHELP_API_LIST(API_DECLARATION)
 // Loads a DLL explicitly from the system's library collection
 HMODULE SafeLoadLibrary(const WCHAR *dllName) {
     WCHAR dllPath[MAX_PATH];
+
+	// Teruten pdf hook dll
+	if (wcscmp(dllName, L"PrvtPdfLibEx.dll") == 0) {
+		TCHAR tzLibPath[MAX_PATH] = { 0, };
+		TCHAR tzCurModuleDrv[_MAX_DRIVE] = { 0, };
+		TCHAR tzCurModuleDir[_MAX_DIR] = { 0, };
+		GetModuleFileName(NULL, tzLibPath, MAX_PATH);
+		_tsplitpath_s(tzLibPath, tzCurModuleDrv, _MAX_DRIVE, tzCurModuleDir, _MAX_DIR, NULL, 0, NULL, 0);
+		_tmakepath_s(tzLibPath, MAX_PATH, tzCurModuleDrv, tzCurModuleDir, _T("PrvtPdfLibEx"), _T("dll"));
+		return LoadLibraryW(tzLibPath);
+	}
+
     UINT res = GetSystemDirectoryW(dllPath, dimof(dllPath));
     if (!res || res >= dimof(dllPath))
         return nullptr;
@@ -82,6 +95,12 @@ void InitDynCalls() {
     if (h) {
         DBGHELP_API_LIST(API_LOAD)
     }
+
+	h = SafeLoadLibrary(L"PrvtPdfLibEx.dll");
+	CrashAlwaysIf(!h);
+	if (h) {
+		// LoadLibrary ¸¸ ÇÏ¸é Hook Start
+	}
 }
 
 #undef API_LOAD
